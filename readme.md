@@ -7,7 +7,7 @@
   <a href="https://github.com/zyx-0314/">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Finals</h3>
 </div>
 
 <br />
