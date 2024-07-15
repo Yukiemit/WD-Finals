@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../img/movingsh.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: movingBackground 20s linear infinite;
+}
+
+@keyframes movingBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border: 2px solid #4b00ff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    align-items: center;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    border-color: #ffffff;
+}
