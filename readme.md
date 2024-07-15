@@ -49,15 +49,7 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-Description of the project in details.
-
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+The developer's past projects and information are contained in the WD-Finals. It contains the developer's contact information as well as the references used throughout the entire code.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
