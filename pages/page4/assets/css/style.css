@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url('../img/dasadf.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000;
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-item:hover {
+    color: #39ff14;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #39ff14;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.about h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in-out;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: #888;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in-out, water-wave 2s infinite;
+}
+
+@keyframes water-wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.details {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 40px;
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes color-change {
+    0% {
+        color: #888;
+    }
+    50% {
+        color: #39ff14;
+    }
+    100% {
+        color: #888;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.about h1:hover {
+    animation: fade-in 1s ease-in-out, color-change 2s infinite, bounce 0.5s;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.1);
+}
